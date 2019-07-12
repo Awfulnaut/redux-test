@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { TodoList } from './index';
 import * as actions from '../actions';
@@ -15,6 +14,8 @@ const getVisibleTodos = (todos, filter) => {
             return todos.filter(
                 t => !t.completed
             );
+        default:
+            return todos
     }
 }
 

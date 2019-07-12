@@ -12,14 +12,14 @@ const Link = ({
     }
 
     return (
-        <a href='#'
+        <button className="btn-link"
             onClick={e => {
                 e.preventDefault();
                 onClick();
             }}
         >
             {children}
-        </a>
+        </button>
     );
 };
 
