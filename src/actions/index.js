@@ -14,6 +14,13 @@ export function toggleTodo(id) {
     };
 };
 
+export function deleteTodo(id) {
+    return {
+        type: 'DELETE_TODO',
+        id
+    }
+}
+
 export function setVisibilityFilter(filter) {
     return {
         type: 'SET_VISIBILITY_FILTER',
